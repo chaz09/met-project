@@ -1,0 +1,2 @@
+class ReguController < ApplicationController
+end
