@@ -1,1 +1,4 @@
+<h1><%= link_to @registeredapp.name, @registeredapp.url %></h1>
 
+    <%= pie_chart @registeredapp.events.group(:name).count %>
+    <%= line_chart @registeredapp.events.group_by_day(:created_at).count %>

@@ -1,3 +1,3 @@
 class PagesController < ApplicationController
-before_action :authenticate_user!, only: [:regusers]
+before_action :authenticate_user!, only: [:regu]
 end

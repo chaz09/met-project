@@ -22,6 +22,9 @@ source 'https://rubygems.org'
  gem 'turbolinks'
  gem 'bootstrap'
  gem 'figaro'
+ gem "chartkick"
+ gem 'groupdate'
+ gem 'pg'
 
  group :development, :test do
    gem 'byebug'

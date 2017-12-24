@@ -4,7 +4,7 @@ class CreateRegisteredapps < ActiveRecord::Migration
       t.references :user, index: true, foreign_key: true
       t.string :name
       t.string :url
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end

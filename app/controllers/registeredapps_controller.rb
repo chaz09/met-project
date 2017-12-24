@@ -8,18 +8,19 @@ class RegisteredappsController < ApplicationController
 
   def show
     @registeredapp = Registeredapp.find(params[:id])
-    @events = @registeredapps.events.group_by(&:name)
+    
+
   end
 
   def new
     @registeredapp = Registeredapp.new
   end
 
-def update
+  def update
 
-  @registeredapp = Registeredapp.find(params[:id])
-  @registeredapp.name = paramas[:registeredapp][:name]
-  @registeredapp.url = paramas[:registeredapp][:url]
+    @registeredapp = Registeredapp.find(params[:id])
+    @registeredapp.name = paramas[:registeredapp][:name]
+    @registeredapp.url = paramas[:registeredapp][:url]
 
     if @registeredapp.save
       flash[:notice] = "Registered application was saved!"
