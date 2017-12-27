@@ -10,21 +10,11 @@
                             <%= registeredapp.url %>
                             <%= link_to 'Show', registeredapp %>
                             <%= link_to 'Edit', edit_registeredapp_path(registeredapp) %>
-                            <%= link_to 'Delete', registeredapp, method: :delete, data: { confirm: 'Are you sure?'}%>
-
                         </div>
                       </div>
-
                     <% end %>
                   </div>
                 </div>
-
-    <%= link_to "New Application", new_registeredapp_path, class: 'btn btn-success' %>
+                <%= link_to "New Application", new_registeredapp_path, class: 'btn btn-success' %>
   </div>
 </div>
-
-<script type="text/javascript">
-     $(document).on("ready page:load", function () {
-        blocmetrics.report("About Page View");
-      })
-</script>
