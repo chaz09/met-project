@@ -10,6 +10,7 @@
                             <%= registeredapp.url %>
                             <%= link_to 'Show', registeredapp %>
                             <%= link_to 'Edit', edit_registeredapp_path(registeredapp) %>
+                            <%= link_to 'Delete', registeredapp, method: :delete, data: { confirm: 'Are you sure?'}%>
                         </div>
                       </div>
                     <% end %>
